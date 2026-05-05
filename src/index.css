@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0A3D62;
+  --color-primary-hover: #08314e;
+  --color-accent: #D4AF37;
+  --color-accent-hover: #bda230;
+  --font-sans: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+/* Dark Mode Overrides */
+html.dark body {
+  background-color: #111827; /* gray-900 */
+  color: #f3f4f6; /* gray-100 */
+}
+
+html.dark body section.bg-white,
+html.dark body section.bg-\[\#F3F4F6\] {
+  background-color: #111827 !important;
+}
+
+/* Cards & Elements */
+html.dark body .bg-white {
+  background-color: #1f2937 !important; /* gray-800 */
+  border-color: #374151 !important; /* gray-700 */
+}
+
+html.dark body .bg-gray-50,
+html.dark body .bg-slate-50,
+html.dark body .bg-\[\#f8f9fa\] {
+  background-color: #374151 !important; /* gray-700 */
+  border-color: #4b5563 !important; /* gray-600 */
+}
+
+html.dark body .border-gray-100,
+html.dark body .border-gray-200 {
+  border-color: #374151 !important;
+}
+
+/* Typography */
+html.dark body .text-gray-900,
+html.dark body .text-gray-800,
+html.dark body .text-slate-800,
+html.dark body .text-\[\#0A3D62\] {
+  color: #f3f4f6 !important;
+}
+
+html.dark body .text-gray-700,
+html.dark body .text-gray-600,
+html.dark body .text-slate-600,
+html.dark body .text-slate-500 {
+  color: #d1d5db !important; /* gray-300 */
+}
+
+/* Accents */
+html.dark body .bg-\[\#0A3D62\]\/5,
+html.dark body .bg-\[\#0A3D62\]\/10 {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #60a5fa !important; /* blue-400 */
+}
+
+html.dark body .bg-red-50 {
+  background-color: rgba(127, 29, 29, 0.2) !important; /* red-900/20 */
+  border-color: rgba(127, 29, 29, 0.5) !important;
+}
+
+html.dark body .bg-red-100 {
+  background-color: rgba(127, 29, 29, 0.3) !important;
+}
+
+html.dark body .text-red-600 {
+  color: #f87171 !important; /* red-400 */
+}
